@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     color:white;
-    background-color: #7e4d7f;
+    background-color: #39ff14;
     border-radius: 10px;
     width:15rem;
     height:4rem;
@@ -36,13 +36,13 @@
     text-align: justify;
 }
 .heading {
-    color: #683c64;
+    color: #39ff14;
     font-size: 3.5rem;
     font-weight:920;
     font-family: sans-serif;
     padding: 2rem 4rem;
     text-align: center;
-    text-shadow: #c474be 2px 2px 15px;
+    text-shadow: #74ff5a 2px 2px 15px;
 }
 .grid {
     /* justify-items: center; */
@@ -166,7 +166,7 @@
 .submit {
     width: 80%;
     font-size: 2rem;
-    background-color: #9a1c90;
+    background-color: #39ff14;
     color: #fff;
     height: 4rem;
     align-items: center;
