@@ -37,7 +37,7 @@ const CaPerks = () => {
                 </div>
             </div>
             <div class="txt">
-                Free Pronites Pass
+                Free Pro Nites Pass
             </div>
         </div>
         <div class="cell">

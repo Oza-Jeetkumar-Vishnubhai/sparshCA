@@ -1,7 +1,6 @@
 import React from "react";
-import img from "./assets/abc.avif";
 
-const AboutCard = ({ mode, content }) => {
+const AboutCard = ({ mode, content,img }) => {
   return (
     <div
       className="center"
@@ -44,8 +43,8 @@ const AboutCard = ({ mode, content }) => {
             style={{
               width: "100%",
               position:"relative",
-              top:"15px",
-              right:"15px",
+              top:"25px",
+              right:"25px",
               zIndex:1
             }}
           />

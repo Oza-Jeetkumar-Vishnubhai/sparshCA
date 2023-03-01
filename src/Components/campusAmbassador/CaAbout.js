@@ -1,5 +1,7 @@
 import React from 'react'
 import AboutCard from './AboutCard'
+import img1 from "./assets/img1.jpg";
+import img2 from "./assets/img2.jpg";
 
 const CaAbout = () => {
   const content1 = "Our program provides you with an exciting opportunity to represent our organization on your campus, while gaining valuable leadership and networking skills.";
@@ -13,8 +15,8 @@ const CaAbout = () => {
           <span className='filled'>ABOUT</span>
           <span className='nonfilled'>ABOUT</span>
         </div>
-        <AboutCard mode={true} content={content1}/>
-        <AboutCard mode={false} content={content2}/>
+        <AboutCard mode={true} content={content1} img={img2}/>
+        <AboutCard mode={false} content={content2} img={img1}/>
     </div>
   )
 }
