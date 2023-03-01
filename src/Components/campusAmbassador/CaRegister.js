@@ -1,103 +1,150 @@
 import React from "react";
+import "./register.css";
 
 const CaRegister = () => {
+  const submitHandler = ()=>{
+    // submit the values
+  }
   return (
-    <>
-      <form action="" method="post">
-        <div class="registerCA">
-          <div class="heading-reg" style={{
-            fontSize: "3.5rem",
-            fontWeight: 920,
-            fontFamily: "sans-serif",
-            padding: "2rem 4rem",
-            textAlign: "center"
-          }}>REGISTER</div>
-          <div class="small-heading">General Details</div>
-          <div class="cols">
-            <div class="col">
-              <input type="text" name="Name" placeholder="Name" class="fill" />
-              <input
-                type="text"
-                name="Contact"
-                placeholder="Contact Number"
-                class="fill"
+    <div>
+      <div className="heading_reg heading_small">REGISTRATION</div>
+      <div className="heading_reg">FORM</div>
+
+      <div className="row form_row">
+        <div className="col-lg-6 col-sm-12">
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="Name"
+              name="Name"
+              placeholder="Name"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="Contact_Number"
+              name="Contact_Number"
+              placeholder="Contact Number"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="email"
+              id="E_mail"
+              name="E_mail"
+              placeholder="E-Mail"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="Institute_name"
+              name="Institute_name"
+              placeholder="Institute Name"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="course"
+              name="course"
+              placeholder="Course"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="Year_Graduation"
+              name="Year_Graduation"
+              placeholder="Year of Graduation"
+            />
+          </div>
+        </div>
+        <div className="col-lg-6 col-sm-12">
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="LinkedIn_ID"
+              name="LinkedIn_ID"
+              placeholder="LinkedIn ID"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="Instagram_ID"
+              name="Instagram_ID"
+              placeholder="Instagram ID"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="Facebook_ID"
+              name="Facebook_ID"
+              placeholder="Facebook ID"
+            />
+          </div>
+
+          <div className="row inputs row_submit">
+            <div className="col-9">
+              {" "}
+              <fieldset>
+                <legend>College ID</legend>
+                <input
+                className="form__input"
+                type="file"
+                id="College_ID"
+                name="College_ID"
+                placeholder="College ID"
               />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Email"
-                class="fill"
-              />
-              <input
-                type="text"
-                name="Institute"
-                placeholder="Institute name"
-                class="fill"
-              />
-              <input
-                type="text"
-                name="Course"
-                placeholder="Course"
-                class="fill"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                name="Graduation-year"
-                placeholder="Year of Graduation"
-                class="fill"
-              />
-              <div class="small-heading">Social Media Details</div>
-              <input
-                type="text"
-                name="LinkedIn"
-                placeholder="LinkedIn ID"
-                class="fill"
-              />
-              <input
-                type="text"
-                name="Instagram"
-                placeholder="Instagram ID"
-                class="fill"
-              />
-              <input
-                type="text"
-                name="Facebook"
-                placeholder="Facebook ID"
-                class="fill"
-              />
-            </div>
-            <div class="col">
-              <div class="small-heading" style={{fontSize: "1.2rem"}}>
-                College ID card proof (Max size : X MB)
-              </div>
-              <div class="mb-3">
-                <input class="form-control" type="file" name="college-id" />
-              </div>
-              <div class="small-heading" style={{fontSize: "1.2rem"}}>
-                Aadhar card proof (Max size : X MB)
-              </div>
-              <div class="mb-3">
-                <input class="form-control" type="file" name="aadhar" />
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="2"
-                  placeholder="Why do you want to be a campus ambasador? "
-                ></textarea>
-              </div>
+              </fieldset>
             </div>
           </div>
-          <center>
-            <button class="submit">Register</button>
-            {/* <input type="submit" value="Register" class="submit" /> */}
-          </center>
+
+          <div className="row inputs row_submit">
+            <div className="col-9">
+              {" "}
+              <fieldset>
+                <legend>Aadhar Card</legend>
+                <input
+                className="form__input"
+                type="file"
+                id="Aadhar"
+                name="Aadhar"
+                placeholder="Aadhar"
+              />
+              </fieldset>
+            </div>
+          </div>
         </div>
-      </form>
-    </>
+      </div>
+
+      <div className="center">
+      <div className="submit col-4">
+        <button className="submitb" onClick={submitHandler}>Submit</button>
+      </div>
+      </div>
+    </div>
   );
 };
 

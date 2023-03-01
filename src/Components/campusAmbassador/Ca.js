@@ -10,9 +10,8 @@ const Ca = () => {
       style={{
         height: "100%",
         width: "100%",
-        // backgroundColor: "black",
         paddingTop: "100px",
-        // color: "white",
+        overflowX:"hidden"
       }}
     >
       <CaHome />
