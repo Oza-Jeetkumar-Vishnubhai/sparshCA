@@ -6,7 +6,7 @@ const CaRegister = () => {
     // submit the values
   }
   return (
-    <div>
+    <form action="https://sparsh-auth-production.up.railway.app/api/campus_ambassador/register" method="post" enctype="multipart/form-data">
       <div className="heading_reg heading_small">REGISTRATION</div>
       <div className="heading_reg">FORM</div>
 
@@ -18,7 +18,7 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="Name"
-              name="Name"
+              name="name"
               placeholder="Name"
             />
           </div>
@@ -28,7 +28,7 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="Contact_Number"
-              name="Contact_Number"
+              name="contact_info"
               placeholder="Contact Number"
             />
           </div>
@@ -38,7 +38,7 @@ const CaRegister = () => {
               className="form__input"
               type="email"
               id="E_mail"
-              name="E_mail"
+              name="email"
               placeholder="E-Mail"
             />
           </div>
@@ -48,7 +48,7 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="Institute_name"
-              name="Institute_name"
+              name="institute_name"
               placeholder="Institute Name"
             />
           </div>
@@ -68,8 +68,18 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="Year_Graduation"
-              name="Year_Graduation"
+              name="year"
               placeholder="Year of Graduation"
+            />
+          </div>
+          <div className="inputs">
+            {" "}
+            <input
+              className="form__input"
+              type="text"
+              id="department"
+              name="department"
+              placeholder="Department"
             />
           </div>
         </div>
@@ -80,7 +90,7 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="LinkedIn_ID"
-              name="LinkedIn_ID"
+              name="LinkedIn"
               placeholder="LinkedIn ID"
             />
           </div>
@@ -90,7 +100,7 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="Instagram_ID"
-              name="Instagram_ID"
+              name="instagram"
               placeholder="Instagram ID"
             />
           </div>
@@ -100,9 +110,20 @@ const CaRegister = () => {
               className="form__input"
               type="text"
               id="Facebook_ID"
-              name="Facebook_ID"
+              name="Facebook"
               placeholder="Facebook ID"
             />
+          </div>
+
+          <div className="inputs">
+            {" "}
+            <textarea 
+              className="form__input"
+              id="Why_do_you_want_to_be_campus_ambassadors"
+              name="Why_do_you_want_to_be_campus_ambassadors"
+              placeholder="Why_do_you_want_to_be_campus_ambassadors"
+            >
+            </textarea>
           </div>
 
           <div className="row inputs row_submit">
@@ -114,7 +135,7 @@ const CaRegister = () => {
                 className="form__input"
                 type="file"
                 id="College_ID"
-                name="College_ID"
+                name="College_ID_card"
                 placeholder="College ID"
               />
               </fieldset>
@@ -130,7 +151,7 @@ const CaRegister = () => {
                 className="form__input"
                 type="file"
                 id="Aadhar"
-                name="Aadhar"
+                name="Aadhar_card"
                 placeholder="Aadhar"
               />
               </fieldset>
@@ -144,7 +165,7 @@ const CaRegister = () => {
         <button className="submitb" onClick={submitHandler}>Submit</button>
       </div>
       </div>
-    </div>
+    </form>
   );
 };
 
